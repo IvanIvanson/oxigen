@@ -1,1 +1,1 @@
-alert('yraaaaaa')
+alert('yra')

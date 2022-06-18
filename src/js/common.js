@@ -1,5 +1,33 @@
-'use strict'
-const a = document.querySelector('h2')
-a.addEventListener('click', function(){
-    alert('work')
-})
+
+const headerLink = document.querySelectorAll("#headerLink");
+function clearLink() {
+  headerLink.forEach(function(item){
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    }
+  });
+}
+headerLink.forEach(function(item){
+  item.addEventListener("click", function() {
+    clearLink();
+      item.classList.add("active");
+      item.style.transition = '0.5s';
+  });
+});
+
+/*
+function clearLink() {
+  headerLink.forEach((item) => {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    }
+  });
+}
+headerLink.forEach((item) => {
+  item.addEventListener("click", () => {
+    clearLink();
+    item.classList.add("active");
+  });
+});
+
+*/
