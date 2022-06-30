@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 
->>>>>>> c94bfdfd30e88267daf29f327bccd6031930e1c1
+// >>>>>>> c94bfdfd30e88267daf29f327bccd6031930e1c1
 const headerLink = document.querySelectorAll("#headerLink");
 function clearLink() {
   headerLink.forEach(function(item){

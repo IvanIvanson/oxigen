@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
   var bgBar = document.querySelector(".bg-bar");
   var out1 = document.querySelector(".value1");
   var bgBar2 = document.querySelector(".bg-bar2");
@@ -60,6 +60,6 @@
     show2();
     show3();
   })
-=======
+// =======
 alert('yra')
->>>>>>> c94bfdfd30e88267daf29f327bccd6031930e1c1
+// >>>>>>> c94bfdfd30e88267daf29f327bccd6031930e1c1
