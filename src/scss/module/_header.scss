@@ -46,12 +46,15 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.6px;
 color: $black;
+
 a{
     text-decoration: none;
     padding: 9px;
+
 }
 .active{
     border-bottom: 1px solid $orange;
+   
 }
 }
     }
@@ -59,9 +62,9 @@ a{
 }
 .content{
     @include flexCenter;
+    flex-direction: column;
 width: 100%;
 min-height: 100%;
-// top: 50%;
 position: absolute;
 border: 4px solid rgb(17, 215, 47);
 .oxigen{
@@ -73,7 +76,19 @@ line-height: 122px;
 position: relative;
 margin: 0 auto;
 color: $white;
-margin-bottom: $oxigenMarginBottom;
+// margin-bottom: $oxigenMarginBottom;
+margin-top: 0px;
+}
+.text{
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 2.74286px;
+margin-top:18.5px;
+color: $orange;
 }
  .cloud{
     position: absolute;
@@ -88,6 +103,10 @@ margin-bottom: $oxigenMarginBottom;
     100%{
         margin-left: -1000px;
     }
+}
+.mouse{
+    margin-top: 180px;
+    cursor: pointer;
 }
 }
    

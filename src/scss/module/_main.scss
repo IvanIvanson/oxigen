@@ -1,0 +1,263 @@
+@import './vars';
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    // @include flexCenter;
+    display: flex;
+flex-direction: column;
+position: relative;
+    max-width: 1440px;
+    
+    border: 1px solid rgb(214, 31, 31);
+    overflow: hidden;
+    margin: 0 auto;
+.about-as {
+    @include flexSpaceBetween;
+background: $lightsilver;
+padding-left: 135px;
+padding-right: 135px;
+   .left {
+max-width: 344px;
+display: flex;
+flex-direction: column;
+ margin-bottom: 90px;
+// padding-left: 135px;
+
+/* identical to box height, or 156% */
+
+
+h2{
+   
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 75px;
+letter-spacing: -1.65px;
+color: $black;
+
+}
+.bar{
+    width: 60px;
+height: 4px;
+left: 0px;
+margin-top: 15px;
+
+background: $orange;
+}
+}
+.right {
+min-height: 180px;
+// padding-right: 135px;
+padding-top: 152px;
+padding-bottom: 152px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+color: $black;
+p{
+    max-width: 770px;
+
+}
+} 
+}
+
+.expertise {
+.expertise-top {
+    padding-top: 143px;
+padding-bottom: 89px;
+padding-left: 135px;
+    h2{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 75px;
+letter-spacing: -1.65px;
+color: $black;
+    }
+    .bar {
+        width: 60px;
+height: 4px;
+left: 0px;
+margin-top: 15px;
+background: $orange; 
+}
+}
+
+.expertise-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // border:solid black 1px;
+
+    .expertise-middle-left {
+width: 400px;
+   
+margin-left: 135px;
+.container:nth-child(1){
+margin-top: 8px;
+}
+.container:nth-child(2){
+margin-top: 28px;
+}
+.container:nth-child(3){
+margin-top: 28px;
+}
+        .container{
+   
+            
+    position:relative;
+    width:370px;
+    outline:none;
+    
+    // margin:50px auto;
+    .bar{
+    width:100%;
+    height:2px;
+    // border:solid black 1px;
+    background: #f0f0f0;
+    border-radius:5px;
+    overflow:hidden;
+    position:relative;
+    .bg-bar{
+    width:0px;
+    height:100%;
+    transition:1.4s ease-in-out;
+    background:#1d1d1d;
+}
+.bg-bar2{
+    width:0;
+    height:100%;
+    transition:1.4s ease-in-out;
+    background:#1d1d1d;
+}
+.bg-bar3{
+    width:0;
+    height:100%;
+    transition:1.4s ease-in-out;
+    background:#1d1d1d;
+}
+}
+.info{
+    display:flex;
+    justify-content:space-between;
+    font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 20px;
+/* identical to box height, or 182% */
+
+letter-spacing: 1px;
+padding-top: 5px;
+color: #1D1D1D;
+}
+}
+
+
+
+}
+    .expertise-middle-right {
+        p{
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+max-width: 770px;
+color: #373A39;
+        }
+}
+}
+
+
+.expertise-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-left: 138px;
+    padding-right: 67px;
+    padding-bottom: 164px;
+.cart {
+    position:relative;
+    max-width: 370px;
+    h4{
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+padding-left: 69px;
+
+
+letter-spacing: 4.29px;
+
+color: #333333;
+    }
+    p{
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+padding-left: 69px;
+
+
+color: #777777;
+    }
+}
+.grfphic {
+    h4{
+        &::before{
+            content: url('../../images/Shape1.svg');
+           left: 0px;
+            padding-top: 0px;
+             position: absolute;
+        }
+    }
+}
+.web {
+     h4{
+        &::before{
+            content: url('../../images/Shape2.svg');
+            left: 0px;
+            position: absolute;
+            padding-top: 0px;
+
+        }
+    }
+}
+.marketing {
+     h4{
+        &::before{
+            content: url('../../images/Shape3.svg');
+           left: 0px;
+             position: absolute;
+            padding-top: 0px;
+
+        }
+    }
+}
+}
+
+}
+
+
+
+
+}
