@@ -3,3 +3,7 @@
 # dependencies
 /node_modules
 src
+gulpfile.js
+.bowerrc
+package-lock.json
+package.json
